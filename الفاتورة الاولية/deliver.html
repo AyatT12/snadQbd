@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> الفاتورة الاولية </title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+</head>
+</style>
+<body>
+    <div class="container" style="text-align: center;">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <!-- إضافة حقل إدخال مخفي لتخزين بيانات الـ PDF -->
+    <input type="hidden" id="InputPdf">
+    <input type="hidden" id="InputHaveNo">
+    <input type="hidden" id="SavePdfReceipt">
+    <input type="hidden" id="Contract_AccountReceiptNo">
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="deliver.js"></script>
+</body>
+</html>
