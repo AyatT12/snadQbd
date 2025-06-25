@@ -20,11 +20,11 @@ async function CreateReceiptPdf() {
       EMPLOYEE_NAME_AR: "عيسي هاني مبروك عزام",
       EMPLOYEE_NAME_EN: "Issa Hani Mumrok Azzam",
       images: {
-          background: "New Template - Exchange Voucher-01.png",
-          signature: "../../images/signature_36.png",
-            qr: "../../images/BenanQR.png",
-           stamp: "../../images/Stamp.png",
-          Recipient_signature: "../../images/signature_33.png",
+          background: "Taiba - Exchange Voucher.png",
+          signature: "../images/signature_36.png",
+            qr: "../images/BenanQR.png",
+           stamp: "../images/Stamp.png",
+          Recipient_signature: "../images/signature_33.png",
 
       },
   };

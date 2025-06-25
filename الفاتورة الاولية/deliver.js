@@ -24,9 +24,9 @@ async function CreateReceiptPdf() {
     EMPLOYEE_EN: "Issa Hani Mumrok Azzam",
     images: {
       background: "Taiba - Proforma Invoice - Empty-01.png",
-      signature: "../../images/signature_08.png",
-      qr: "../../images/BenanQR.png",
-      stamp: "../../images/Stamp.png",
+      signature: "../images/signature_08.png",
+      qr: "../images/BenanQR.png",
+      stamp: "../images/Stamp.png",
     },
     Serviceitems: [
       { arabic: "الايجار", english: "Rent" },

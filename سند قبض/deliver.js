@@ -20,10 +20,10 @@ async function CreateReceiptPdf() {
       EMPLOYEE_NAME_AR: "عيسي هاني مبروك عزام",
       EMPLOYEE_NAME_EN: "Issa Hani Mumrok Azzam",
       images: {
-          background: "Kodi - Receipt Voucher.png",
-          signature: "../../images/signature_36.png",
-            qr: "../../images/BenanQR.png",
-           stamp: "../../images/Stamp.png",
+          background: "Taiba - Receipt Voucher.png",
+          signature: "../images/signature_36.png",
+            qr: "../images/BenanQR.png",
+           stamp: "../images/Stamp.png",
 
       },
   };
