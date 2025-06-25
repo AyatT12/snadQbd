@@ -17,7 +17,7 @@ async function CreateReceiptPdf() {
     EMPLOYEE_AR: "عيسي هاني مبروك عزام",
     EMPLOYEE_EN: "Issa Hani Mumrok Azzam",
     images: {
-      background: "New Template - Simplified Tax Invoice-01.png",
+      background: "Taiba - Simplified Tax Invoice-01.png",
       signature: "../images/signature_08.png",
       qr: "../images/BenanQR.png",
       stamp: "../images/Stamp.png",
