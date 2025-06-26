@@ -8,19 +8,25 @@
     <link rel="stylesheet" type="text/css" href="../style/style.css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        
-         #myCanvas {
+        @media(min-width:768px) {
+            #myCanvas {
                 width: 58%;
                 max-height: 100vh;
-            }        
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container" style="text-align: center;">
-        <canvas id="myCanvas"></canvas>
+   <div class="container " style="text-align: center;">
+      <div class="row  align-items-center justify-content-center ">
+          <canvas id="myCanvas"></canvas>
+         <button type="button" class="btn btn-info" id="download">تحميل</button>
+      </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="deliver.js"></script>
 </body>
 
