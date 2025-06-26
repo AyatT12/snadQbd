@@ -283,6 +283,16 @@ const drawItems = (items, xPosition, startY, align) => {
   );
   drawItems(data.VATitems, canvas.width - 1930, startYForNumbers, "center");
   drawItems(data.Totalitems, canvas.width - 2220, startYForNumbers, "center");
+
+
+  // تحميل المستند 
+var saveButton = document.getElementById('download');
+saveButton.onclick = function(e) {
+   CreateReceiptPdf()
+    canvas.toBlob(function(blob) {
+        saveAs(blob, "Document.png");
+    });
+};
 };
 
 CreateReceiptPdf();
