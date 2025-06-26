@@ -21,7 +21,7 @@ async function CreateReceiptPdf() {
       EMPLOYEE_NAME_EN: "Issa Hani Mumrok Azzam",
       images: {
           background: "Taiba - Exchange Voucher.png",
-          signature: "../images/signature_36.png",
+           signature: "../images/signature_36.png",
             qr: "../images/BenanQR.png",
            stamp: "../images/Stamp.png",
           Recipient_signature: "../images/signature_33.png",
@@ -93,13 +93,13 @@ const fixedConfig = {
       { key: "PAYMENT_DESC_EN", x: canvas.width - 310, y: 1240, align: "right" },
       { key: "NOTES_AR", x: canvas.width - 255, y: 1340, align: "right"  ,fontSize:49 },
       { key: "EMPLOYEE_NAME_AR", x: canvas.width - 200, y: 1460, align: "right"  ,fontSize:49 },
-      { key: "EMPLOYEE_NAME_EN", x: canvas.width - 200, y: 1500, align: "right" },
+      { key: "EMPLOYEE_NAME_EN", x: canvas.width - 200, y: 1505, align: "right" },
   ],
   images: [
-      { content: data.images.signature, x: canvas.width - 892, y: 1432, width: 173, height: 85 },
+      { content: data.images.signature, x: canvas.width - 580, y: 1502, width: 150, height: 68   },
       { content: data.images.Recipient_signature, x: canvas.width - 1400, y: 1432, width: 171, height: 85 },
-      { content: data.images.qr, x: canvas.width - 2402, y: 1425, width: 180, height: 180 },
-      { content: data.images.stamp, x: canvas.width - 370, y: 1528, width: 168, height: 170 },
+      { content: data.images.qr, x: canvas.width - 2398, y: 1430, width: 170, height: 170 },
+      { content: data.images.stamp, x: canvas.width - 380, y: 1530, width: 180, height: 168 },
   ],
     textStyle: {
       fontWeight: "normal",
