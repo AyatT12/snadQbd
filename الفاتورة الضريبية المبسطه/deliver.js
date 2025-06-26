@@ -5,7 +5,7 @@ async function CreateReceiptPdf() {
   const dynamicData = {
     CONTRACT_NUMBER: "24-1301-4001105-000303",
     DATE_AR: "الأحد ٨ جمادي الأولى ١٤٤٦",
-    DATE_Num: "11/10/2024",
+    DATE_Num: "2025/10/25",
     DATE_EN:"Sunday, 8 Jumada al-Awwal 1446",
     REFERENCE_AR: "إنشاء عقد",
     REFERENCE_EN: "Create Contract",
@@ -38,7 +38,7 @@ async function CreateReceiptPdf() {
  
    
     ],
-    Valueitems: [{ content: "3200000.00" }, { content: "0.00" }, { sum: "320,0000.00" }],
+    Valueitems: [{ content: "500.00" }, { content: "1,000.00" }],
     Numberitems: [{ content: "320.00" }, { content: "50.00" }],
     Amountitems: [{ content: "320.00" }, { content: "50.00" }, { sum: "370.00" }],
     Discountitems: [{ content: "320.00" }, { content: "500,000.00" }, { sum: "370.00" }],
@@ -51,7 +51,6 @@ async function CreateReceiptPdf() {
   const dataWithImages = { ...dynamicData, images: loadedImages };
   console.log("dataWithImages", dataWithImages);
   await drawReceipt(canvas, dataWithImages);
-  createPdf(accountReceiptNo, canvas, "SavePdfReceipt", "Contract_AccountReceiptNo");
 }
 
 //  لتحميل الصور
