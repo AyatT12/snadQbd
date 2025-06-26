@@ -5,14 +5,14 @@ async function CreateReceiptPdf() {
   const dynamicData = {
     CONTRACT_NUMBER: "24-1301-4001105-000303",
     DATE_AR: "الأحد ٨ جمادي الأولى ١٤٤٦",
-    DATE_Num: "25/10/2024",
+    DATE_Num: "2025/10/25",
     DATE_EN: "Sunday, 8 Jumada al-Awwal 1446",
     START_DATE_AR:  "الأحد ٨ جمادي الأولى ١٤٤٦",
     START_DATE_EN: "Sunday, 8 Jumada al-Awwal 1446",
-    START_DATE_NUM:"25/10/2024",
+    START_DATE_NUM:"2025/10/25",
     END_DATE_AR:  "الأحد ٨ جمادي الأولى ١٤٤٦",
     END_DATE_EN: "Sunday, 8 Jumada al-Awwal 1446",
-    END_DATE_NUM:"25/10/2024",
+    END_DATE_NUM:"2025/10/25",
     REFERENCE_AR: "إنشاء عقد",
     REFERENCE_EN: "Create Contract",
     REFERENCE_NUM :`(${"24-1301-4001105-000303"})`,
@@ -36,35 +36,32 @@ async function CreateReceiptPdf() {
     ],
     Valueitems: [
       { content: "320.00" },
-      { content: "1000,000.00" },
-      { sum: "1000,000.00" },
+      { content: "1,000,000.00" },
     ],
     Numberitems: [
       { content: "320.00" },
       { content: "50.00" },
-      
-      { content: "0.00" },
     ],
     Amountitems: [
       { content: "320.00" },
       { content: "50.00" },
-      { sum: "1000,000.00"  },
+      { sum: "1,000,000.00"  },
     ],
     Discountitems: [
       { content: "320.00" },
       { content: "50.00" },
-      { sum: "1000,000.00"  },
+      { sum: "1,000,000.00"  },
     ],
     AfterDiscountitems: [
       { content: "320.00" },
       { content: "50.00" },
-      { sum: "1000,000.00"  },
+      { sum: "1,000,000.00"  },
     ],
-    VATitems: [{ content: "320.00" }, { content: "50.00" }, { sum: "1000,000.00"  }],
+    VATitems: [{ content: "320.00" }, { content: "50.00" }, { sum: "1,000,000.00"  }],
     Totalitems: [
       { content: "320.00" },
       { content: "50.00" },
-      { sum: "1000,000.00"  },
+      { sum: "1,000,000.00"  },
     ],
   };
 
@@ -72,12 +69,6 @@ async function CreateReceiptPdf() {
   const dataWithImages = { ...dynamicData, images: loadedImages };
   console.log("dataWithImages", dataWithImages);
   await drawReceipt(canvas, dataWithImages);
-  createPdf(
-    accountReceiptNo,
-    canvas,
-    "SavePdfReceipt",
-    "Contract_AccountReceiptNo"
-  );
 }
 
 //  لتحميل الصور
