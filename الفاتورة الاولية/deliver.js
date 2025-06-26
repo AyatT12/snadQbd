@@ -143,10 +143,10 @@ const drawReceipt = async (canvas, data) => {
     images: [
       {
         content: data.images.signature,
-        x: canvas.width - 1263,
-        y: 2898,
-        width: 297,
-        height: 129,
+        x: canvas.width - 640,
+        y: 3000,
+        width: 150, 
+        height: 68
       },
       {
         content: data.images.qr,
@@ -155,12 +155,12 @@ const drawReceipt = async (canvas, data) => {
         width: 390,
         height: 400,
       },
-      {
+    {
         content: data.images.stamp,
         x: canvas.width - 475,
         y: 3052,
-        width: 296,
-        height: 255,
+        width: 180,
+        height: 168,
       },
     ],
     textStyle: {
