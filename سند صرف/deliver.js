@@ -141,6 +141,14 @@ fixedConfig.images.forEach(({ content, x, y, width, height }) => {
     console.warn("Image not found or not loaded, skipping.");
   }
 });
+// تحميل المستند 
+var saveButton = document.getElementById('download');
+saveButton.onclick = function(e) {
+   CreateReceiptPdf()
+    canvas.toBlob(function(blob) {
+        saveAs(blob, "Document.png");
+    });
+};
 };
 
 
