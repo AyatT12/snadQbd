@@ -4,7 +4,7 @@ async function CreateReceiptPdf() {
   const dynamicData = {
       DATE_AR: "الأحد ٨ جمادي الأولى ١٤٤٦",
       DATE_EN: "Sunday, 8 Jumada al-Awwal 1446",
-      DATE_NUM: "11/10/2024",
+      DATE_NUM: "2025/10/25",
       CONTRACT_NUMBER: "24-1301-4001105-000303",
       AMOUNT: "5,560",
       HALALAS: "82",
@@ -31,7 +31,6 @@ async function CreateReceiptPdf() {
   const dataWithImages = { ...dynamicData, images: loadedImages };
   console.log("dataWithImages",dataWithImages);
   await drawReceipt(canvas, dataWithImages);
-  createPdf(accountReceiptNo, canvas, "SavePdfReceipt", "Contract_AccountReceiptNo");
 };
 
 
