@@ -18,9 +18,9 @@ async function CreateReceiptPdf() {
     EMPLOYEE_EN: "Issa Hani Mumrok Azzam",
     images: {
       background: "Taiba - Simplified Tax Invoice-01.png",
-      signature: "../images/signature_08.png",
-      qr: "../images/BenanQR.png",
-      stamp: "../images/Stamp.png",
+       signature: "../images/signature_36.png",
+            qr: "../images/BenanQR.png",
+           stamp: "../images/Stamp.png",
     },
     Serviceitems: [
         { arabic: "الايجار", english: "Rent" },
@@ -110,10 +110,10 @@ const drawReceipt = async (canvas, data) => {
     images: [
       {
         content: data.images.signature,
-        x: canvas.width - 1263,
-        y: 2898,
-        width: 297,
-        height: 129,
+        x: canvas.width - 640,
+        y: 3000,
+        width: 150, 
+        height: 68
       },
       {
         content: data.images.qr,
@@ -126,8 +126,8 @@ const drawReceipt = async (canvas, data) => {
         content: data.images.stamp,
         x: canvas.width - 475,
         y: 3052,
-        width: 296,
-        height: 255,
+        width: 180,
+        height: 168,
       },
     ],
     textStyle: {
