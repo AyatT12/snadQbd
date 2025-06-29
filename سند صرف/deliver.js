@@ -34,8 +34,8 @@
     const dataWithImages = { ...dynamicData, images: loadedImages };
     
     await drawReceipt(canvas, dataWithImages);
-    
-    displayResultInNewWindow(canvas);
+    Receipt_Number = "24-1301-4001105-000303"
+    displayResultInNewWindow(canvas , Receipt_Number ) ;
     
   } catch (error) {
     console.error("Error generating receipt:", error);
@@ -135,7 +135,7 @@ async function drawReceipt(canvas, data) {
   });
 }
 
-function displayResultInNewWindow(canvas) {
+function displayResultInNewWindow(canvas , Receipt_Number) {
   const dataUrl = canvas.toDataURL("image/png");
   const newWindow = window.open();
   
@@ -204,13 +204,13 @@ function displayResultInNewWindow(canvas) {
             <div class="image-container">
                 <img src="${dataUrl}" alt="Receipt" id="pic"/>
             </div>
-            <button class="download-btn" id="downloadBtn">حفظ</button>
+            <button class="download-btn" id="downloadBtn"><img src="images/save.svg" class="w-100"/></button>
         </div>
         <script>
             document.getElementById('downloadBtn').addEventListener('click', function() {
                 const link = document.createElement('a');
                 link.href = '${dataUrl}';
-                link.download = 'receipt-${new Date().toISOString().slice(0, 10)}.png';
+                link.download = '${Receipt_Number}.png';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
