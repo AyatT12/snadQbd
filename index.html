@@ -22,14 +22,24 @@
 
     <div class="btn-container">
         <h1>اختر المستند </h1>
-        <a href="الفاتورة الاولية/deliver.html" class="btn btn-danger btn-lg m-2">الفاتورة الأولية  </a>
-        <a href="الفاتورة الضريبية المبسطه/deliver.html" class="btn btn-primary btn-lg m-2">الفاتورة  الضريبية المبسطة  </a>
-        <a href="سند قبض/deliver.html" class="btn btn-success btn-lg m-2">سند قبض</a>
-        <a href="سند صرف/deliver.html" class="btn btn-danger btn-lg m-2" target="_blank">سند صرف</a>
+        <button  class="btn btn-danger btn-lg m-2" onclick="createAndDisplayReceipt_4();">الفاتورة الأولية  </button>
+        <button class="btn btn-primary btn-lg m-2" onclick="createAndDisplayReceipt_3();">الفاتورة  الضريبية المبسطة  </button>
+        <button  class="btn btn-success btn-lg m-2" onclick="createAndDisplayReceipt_1();">سند قبض</button>
+        <button  class="btn btn-danger btn-lg m-2" onclick="createAndDisplayReceipt_2();">سند صرف</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- scripts -->
+    <script src="الفاتورة الاولية/deliver.js"></script>
+    <script src="الفاتورة الضريبية المبسطه/deliver.js"></script>
+    <script src="سند قبض/deliver.js"></script>
+    <script src="سند صرف/deliver.js"></script>
+
+
+
+
 </body>
 </html>

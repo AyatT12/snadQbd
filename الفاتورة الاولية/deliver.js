@@ -1,4 +1,5 @@
-async function createAndDisplayReceipt() {
+(function() {
+  async function createAndDisplayReceipt_4() {
   try {
     const canvas = document.createElement("canvas");
 
@@ -25,10 +26,10 @@ async function createAndDisplayReceipt() {
       EMPLOYEE_AR: " عيسي هاني مبروك عزام",
       EMPLOYEE_EN: "Issa Hani Mumrok Azzam",
       images: {
-        background: "Taiba - Proforma Invoice - Empty-01.png",
-        signature: "../images/signature_08.png",
-        qr: "../images/BenanQR.png",
-        stamp: "../images/Stamp.png",
+        background: "الفاتورة الاولية/Taiba - Proforma Invoice - Empty-01.png",
+        signature: "images/signature_08.png",
+        qr: "images/BenanQR.png",
+        stamp: "images/Stamp.png",
       },
       Serviceitems: [
         { arabic: "الايجار", english: "Rent" },
@@ -379,7 +380,7 @@ function displayResultInNewWindow(canvas) {
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>الفاتورة الضريبية </title>
+        <title>الفاتورة  الأولية </title>
         <style>
             body {
                 margin: 0;
@@ -459,3 +460,5 @@ function displayResultInNewWindow(canvas) {
   newWindow.document.write(html);
   newWindow.document.close();
 }
+  window.createAndDisplayReceipt_4 = createAndDisplayReceipt_4;
+})();

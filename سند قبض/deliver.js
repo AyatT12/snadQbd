@@ -1,4 +1,5 @@
-async function createAndDisplayReceipt() {
+(function() {
+  async function createAndDisplayReceipt_1() {
   try {
     const canvas = document.createElement("canvas");
 
@@ -25,10 +26,10 @@ async function createAndDisplayReceipt() {
       EMPLOYEE_NAME_AR: "عيسي هاني مبروك عزام",
       EMPLOYEE_NAME_EN: "Issa Hani Mumrok Azzam",
       images: {
-        background: "Taiba - Receipt Voucher.png",
-        signature: "../images/signature_36.png",
-        qr: "../images/BenanQR.png",
-        stamp: "../images/Stamp.png",
+        background: "سند قبض/Taiba - Receipt Voucher.png",
+        signature: "images/signature_36.png",
+        qr: "images/BenanQR.png",
+        stamp: "images/Stamp.png",
       },
     };
 
@@ -321,3 +322,6 @@ function displayResultInNewWindow(canvas) {
   newWindow.document.write(html);
   newWindow.document.close();
 }
+
+  window.createAndDisplayReceipt_1 = createAndDisplayReceipt_1;
+})();
